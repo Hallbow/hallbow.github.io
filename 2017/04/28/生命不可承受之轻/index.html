@@ -5,14 +5,34 @@
   
 
 
-<html class="theme-next gemini use-motion" lang="">
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="#222">
 
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
 
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
 
 
 
@@ -56,10 +76,10 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png?v=5.1.3">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png?v=5.1.3">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico?v=5.1.3">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png?v=5.1.3">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.ico?v=5.1.3">
 
 
   <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
@@ -87,7 +107,7 @@
 <meta property="og:url" content="http://hallbow.github.io/2017/04/28/生命不可承受之轻/index.html">
 <meta property="og:site_name" content="Hallbow's blog">
 <meta property="og:description" content="这是一篇十分美丽的文章">
-<meta property="og:updated_time" content="2017-11-06T16:04:49.272Z">
+<meta property="og:updated_time" content="2017-11-07T16:23:17.559Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="生命不可承受之轻">
 <meta name="twitter:description" content="这是一篇十分美丽的文章">
@@ -106,7 +126,7 @@
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
-      author: 'Author'
+      author: '博主'
     },
     algolia: {
       applicationID: '',
@@ -138,7 +158,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
@@ -186,7 +206,37 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Home
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
           </a>
         </li>
       
@@ -196,7 +246,17 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archives
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
           </a>
         </li>
       
@@ -238,7 +298,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Hallbow">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/uploads/hallbow.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -260,9 +320,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-04-28T09:19:58+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-28T09:19:58+08:00">
                 2017-04-28
               </time>
             
@@ -281,7 +341,7 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">In</span>
+                <span class="post-meta-item-text">分类于</span>
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -302,9 +362,52 @@
 
           
           
+             <span id="/2017/04/28/生命不可承受之轻/" class="leancloud_visitors" data-flag-title="生命不可承受之轻">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">热度&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+                 <span>℃</span>
+             </span>
+          
 
           
 
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  522
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  2
+                </span>
+              
+            </div>
           
 
           
@@ -326,7 +429,7 @@
       
 
       
-        <center><br>想去学跳伞，考热气球执照，滑翔机。<br>带着身体重量从几万米的高空俯冲向大地，<br>直到眼前的村庄渐渐清晰。<br>做个插上翅膀就能飞的人，<br>即使我没有翅膀。<br><a id="more"></a><br>想沉在马尔代夫的海底，<br>跟鱼儿一起生活，<br>在几千米的海底向往着穿透过深海的微光。<br>随着潮汐翻涌，<br>等待着下坠的海岸线，<br>依着血色珊瑚，<br>沉沦在一场又一场的梦境。<br>想为你播种一片麦田，<br>等待风起时无边无际的倾斜向遥远的地平线，<br>年复一年，年复一年，<br>我们静静的守在夕阳中，<br>直到世界停止变迁。<br>想去云端，找寻孩子们失落的风筝，<br>在风筝上写封信给你，<br>在天堂等你。<br>想在余生中每一个日夜，<br>亲口对你说，早安，晚安。<br>想在海上造一所房子，<br>夜晚的时候随着海风摇摇欲坠。<br>风暴掀起的声浪是我们愉悦的深情，<br>在漆黑的夜晚伸手指向屹立的灯塔，<br>永不褪色，永不退缩。<br>想旅行到最遥远的星星，<br>然后问它们，关于爱情。<br>想豢养一只精灵，<br>放在手心里，<br>或者，放在脑海里。<br>用记忆供养它，<br>直到变成一个只属于你的人。<br>在晴天，变成一棵树，<br>在雨天，变成一把伞。<br>然后成为风，吹散你所有的烦恼。<br>想用灵魂跟你沟通，<br>如果现在不行，<br>总有一天我会丢掉沉重的躯壳。<br>想重新做一个人，<br>把我们的错误全都抹掉，<br>然后，像一张白纸一样下坠。<br>生命本没有重量，<br>也没有不能承受之轻。<br>想架一座桥梁，进入你的梦，<br>驱赶你所有的伤痛，<br>不让你在阴霾的夜里受伤。<br>告诉你我有多爱你，<br>即使我永不会再醒来。<br>想，<br>做一个让纯真永不褪色的人。<br>想你，<br>想着，永远不会老去的人生。<br>晚安，晚安。<br>晚安，晚安。<br></center>
+        <center><br>想去学跳伞，考热气球执照，滑翔机。<br>带着身体重量从几万米的高空俯冲向大地，<br>直到眼前的村庄渐渐清晰。<br>做个插上翅膀就能飞的人，<br>即使我没有翅膀。<br><a id="more"></a><br>想沉在马尔代夫的海底，<br>跟鱼儿一起生活，<br>在几千米的海底向往着穿透过深海的微光。<br>随着潮汐翻涌，<br>等待着下坠的海岸线，<br>依着血色珊瑚，<br>沉沦在一场又一场的梦境。<br>想为你播种一片麦田，<br>等待风起时无边无际的倾斜向遥远的地平线，<br>年复一年，年复一年，<br>我们静静的守在夕阳中，<br>直到世界停止变迁。<br>想去云端，找寻孩子们失落的风筝，<br>在风筝上写封信给你，<br>在天堂等你。<br>想在余生中每一个日夜，<br>亲口对你说，早安，晚安。<br>想在海上造一所房子，<br>夜晚的时候随着海风摇摇欲坠。<br>风暴掀起的声浪是我们愉悦的深情，<br>在漆黑的夜晚伸手指向屹立的灯塔，<br>永不褪色，永不退缩。<br>想旅行到最遥远的星星，<br>然后问它们，关于爱情。<br>想豢养一只精灵，<br>放在手心里，<br>或者，放在脑海里。<br>用记忆供养它，<br>直到变成一个只属于你的人。<br>在晴天，变成一棵树，<br>在雨天，变成一把伞。<br>然后成为风，吹散你所有的烦恼。<br>想用灵魂跟你沟通，<br>如果现在不行，<br>总有一天我会丢掉沉重的躯壳。<br>想重新做一个人，<br>把我们的错误全都抹掉，<br>然后，像一张白纸一样下坠。<br>生命本没有重量，<br>也没有不能承受之轻。<br>想架一座桥梁，进入你的梦，<br>驱赶你所有的伤痛，<br>不让你在阴霾的夜里受伤。<br>告诉你我有多爱你，<br>即使我永不会再醒来。<br>想，<br>做一个让纯真永不褪色的人。<br>想你，<br>想着，永远不会老去的人生。<br>晚安，晚安。<br></center>
 
       
     </div>
@@ -344,12 +447,22 @@
       
         <div class="post-tags">
           
-            <a href="/tags/美文/" rel="tag"># 美文</a>
+            <a href="/tags/美文/" <i class="fa fa-tag"></i> 美文</a>
           
-            <a href="/tags/文艺/" rel="tag"># 文艺</a>
+            <a href="/tags/文艺/" <i class="fa fa-tag"></i> 文艺</a>
           
         </div>
       
+
+    <div>
+        
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束 <i class="fa fa-paw"></i> 感谢您的阅读-------------</div>
+    
+</div>
+        
+    </div>
 
       
       
@@ -386,6 +499,32 @@
 
     <div class="post-spread">
       
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+<span class="jiathis_txt">分享到：</span>
+<a class="jiathis_button_fav">收藏夹</a>
+<a class="jiathis_button_copy">复制网址</a>
+<a class="jiathis_button_email">邮件</a>
+<a class="jiathis_button_weixin">微信</a>
+<a class="jiathis_button_qzone">QQ空间</a>
+<a class="jiathis_button_tqq">腾讯微博</a>
+<a class="jiathis_button_douban">豆瓣</a>
+<a class="jiathis_button_share">一键分享</a>
+
+<a href="http://www.jiathis.com/share?uid=2140465" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+var jiathis_config={
+  data_track_clickback:true,
+  summary:"",
+  shortUrl:false,
+  hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+      
     </div>
   </div>
 
@@ -395,6 +534,10 @@
 
 
           
+  
+    <div class="comments" id="comments">
+      <div id="vcomments"></div>
+    </div>
   
 
 
@@ -422,8 +565,12 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
+              <img class="site-author-image" itemprop="image"
+                src="/uploads/hallbow.png"
+                alt="Hallbow" />
+            
               <p class="site-author-name" itemprop="name">Hallbow</p>
-              <p class="site-description motion-element" itemprop="description">啊哈哈哈哈哈哈哈</p>
+              <p class="site-description motion-element" itemprop="description">day day up</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -434,7 +581,7 @@
                 <a href="/archives/">
               
                   <span class="site-state-item-count">2</span>
-                  <span class="site-state-item-name">posts</span>
+                  <span class="site-state-item-name">日志</span>
                 </a>
               </div>
             
@@ -445,7 +592,7 @@
               <div class="site-state-item site-state-categories">
                 
                   <span class="site-state-item-count">2</span>
-                  <span class="site-state-item-name">categories</span>
+                  <span class="site-state-item-name">分类</span>
                 
               </div>
             
@@ -456,7 +603,7 @@
               <div class="site-state-item site-state-tags">
                 
                   <span class="site-state-item-count">4</span>
-                  <span class="site-state-item-name">tags</span>
+                  <span class="site-state-item-name">标签</span>
                 
               </div>
             
@@ -474,12 +621,60 @@
 
           <div class="links-of-author motion-element">
             
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/hallbow" target="_blank" title="GitHub">
+                    
+                      <i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:hallbow@qq.com" target="_blank" title="E-Mail">
+                    
+                      <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+            
           </div>
 
           
           
 
           
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-globe"></i>
+                推荐阅读
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.uisdc.com/" title="优设" target="_blank">优设</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.zhangxinxu.com/" title="张鑫旭" target="_blank">张鑫旭</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.alloyteam.com/nav/" title="Web前端导航" target="_blank">Web前端导航</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.36zhen.com/t?id=3448" title="前端书籍资料" target="_blank">前端书籍资料</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://ife.baidu.com/" title="百度前端技术学院" target="_blank">百度前端技术学院</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://wf.uisdc.com/cn/" title="google前端开发基础" target="_blank">google前端开发基础</a>
+                  </li>
+                
+              </ul>
+            </div>
           
 
           
@@ -501,7 +696,8 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2017</span>
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -511,19 +707,26 @@
 </div>
 
 
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+<div class="powered-by">
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_pv">
+  本站总访问量：<span id="busuanzi_value_site_pv"></span>
+</span>
+</div>
+
+ <!-- <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div> -->
 
 
 
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.3</div>
 
 
 
 
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共1.6k字</span>
+</div>
         
 
 
@@ -564,6 +767,8 @@
   
 
 
+  
+
 
 
 
@@ -591,6 +796,9 @@
 
   
   <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
 
 
   
@@ -652,6 +860,21 @@
 
 
 
+  
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/valine@1.1.4/dist/Valine.min.js"></script>
+  <script type="text/javascript">
+    new Valine({
+        av: AV,
+        el: '#vcomments' ,
+        verify: false,
+        notify: false,
+        app_id: '5fSYmkxEz27eirRva2e1BpAu-gzGzoHsz',
+        app_key: 'oxH1k5dXsbzKau6l6YDfrMBe',
+        placeholder: 'Comment input placeholder'
+    });
+  </script>
+
 
 
   
@@ -663,6 +886,111 @@
   
 
   
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("5fSYmkxEz27eirRva2e1BpAu-gzGzoHsz", "oxH1k5dXsbzKau6l6YDfrMBe");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
 
   
 
@@ -671,6 +999,46 @@
   
 
   
+
+  
+
+
+<!-- Fork me on Github -->
+<a href="https://github.com/hallbow"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/love.js"></script>
+
+
+	<div id="hexo-helper-live2d">
+      <canvas id="live2dcanvas" width="150" height="300" class="live2d"></canvas>
+	</div>
+    <style>
+      #live2dcanvas {
+        position: fixed;
+        right: 0px;
+        z-index: 999;
+        pointer-events: none;
+        bottom: -20px;
+      }
+    </style>
+    <script src="/live2d/device.min.js"></script>
+    <script type="text/javascript">
+    (function(){
+    if(device.mobile()){
+      
+      document.getElementById("live2dcanvas").width = 75;
+      document.getElementById("live2dcanvas").height = 150;
+      document.write('<script type="text/javascript" src="/live2d/script.js"><\/script>');
+      document.write('<script>loadlive2d("live2dcanvas", "/live2d/assets/wanko.model.json", 0.5)<\/script>');
+      
+    }else{
+      document.write('<script type="text/javascript" src="/live2d/script.js"><\/script>');
+      document.write('<script>loadlive2d("live2dcanvas", "/live2d/assets/wanko.model.json", 0.5)<\/script>');
+    }
+    })();
+    </script>
+
 
 </body>
 </html>
